@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hacer Pedido - Atlas SPA</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" type="image/png" href="assets/AtlasIndustrial-Logo-Icono_NoBG.png">
+</head>
+<body>
+    <!-- Contenedor del Navbar -->
+    <header id="navbar-container"></header>
+
+    <!-- Layout Principal de Pedidos -->
+    <main class="order-layout">
+        
+        <!-- Contenedor de Productos -->
+        <div class="menu-container">
+            
+            <!-- Categoría: Pesaje -->
+            <section class="category-section">
+                <h2 class="category-title">Sistemas de Pesaje</h2>
+                <div class="products-grid">
+                    
+                    <!-- Producto 1 -->
+                    <div class="product-card">
+                        <div class="product-image">⚖️</div>
+                        <div class="product-info">
+                            <h3 class="product-name">Balanza Digital Pro</h3>
+                            <p class="product-desc">Alta precisión milimétrica para control industrial riguroso.</p>
+                            <div class="product-footer">
+                                <span class="product-price">$89.990</span>
+                                <button class="btn-add">Agregar</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Producto 2 -->
+                    <div class="product-card">
+                        <div class="product-image">🚛</div>
+                        <div class="product-info">
+                            <h3 class="product-name">Plataforma de Pesaje</h3>
+                            <p class="product-desc">Estructura de acero reforzado para pesaje de alto tonelaje.</p>
+                            <div class="product-footer">
+                                <span class="product-price">$450.000</span>
+                                <button class="btn-add">Agregar</button>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+
+            <!-- Categoría: Tecnología -->
+            <section class="category-section">
+                <h2 class="category-title">Tecnología & Automatización</h2>
+                <div class="products-grid">
+                    
+                    <!-- Producto 3 -->
+                    <div class="product-card">
+                        <div class="product-image">📟</div>
+                        <div class="product-info">
+                            <h3 class="product-name">Indicador Digital</h3>
+                            <p class="product-desc">Pantalla LED de alta visibilidad con salida de datos programable.</p>
+                            <div class="product-footer">
+                                <span class="product-price">$120.000</span>
+                                <button class="btn-add">Agregar</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Producto 4 -->
+                    <div class="product-card">
+                        <div class="product-image">🌐</div>
+                        <div class="product-info">
+                            <h3 class="product-name">Módulo de Red IoT</h3>
+                            <p class="product-desc">Transmisión inalámbrica de registros directamente a la nube.</p>
+                            <div class="product-footer">
+                                <span class="product-price">$75.000</span>
+                                <button class="btn-add">Agregar</button>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+
+        </div>
+
+        <!-- Lateral: Resumen del Pedido (Carrito) -->
+        <aside class="cart-panel">
+            <h3 class="cart-title">
+                Tu Lista de Interés 
+                <span class="cart-count">0</span>
+            </h3>
+            
+            <div class="cart-content">
+                <p class="cart-empty">No has agregado productos a tu lista de consulta todavía.</p>
+            </div>
+
+            <div class="cart-summary">
+                <div class="summary-row">
+                    <span>Total estimado:</span>
+                    <span>$0</span>
+                </div>
+                <button class="btn-checkout">Cotizar</button>
+            </div>
+        </aside>
+
+    </main>
+
+    <div id="float-wsp"></div>
+
+    <!-- Contenedor del Footer -->
+    <div id="footer-container"></div>
+
+    <!-- Scripts JavaScript -->
+    <script src="js/navbar.js"></script>
+    <script src="js/storage.js"></script>
+    <script src="js/modal.js"></script>
+    <script src="js/carrito.js"></script>
+    <script src="js/buscar.js"></script>
+    <script src="js/whatsapp.js"></script>
+    <script src="js/footer.js"></script>
+</body>
+</html>
