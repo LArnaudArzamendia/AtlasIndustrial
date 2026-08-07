@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contáctanos - Atlas SPA</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" type="image/png" href="assets/AtlasIndustrial-Logo-Icono_NoBG.png">
+</head>
+<body>
+    <header id="navbar-container"></header>
+
+    <div class="page-container">
+        <div class="contact-card">
+            <div class="card-body">
+                
+                <!-- Izquierda: Información de contacto y Mapa -->
+                <div class="info-column">
+                    <h1>Contáctanos.</h1>
+                    <p>Ponte en contacto con nosotros si tienes alguna duda y para que podamos brindarte el mejor servicio. Te responderemos lo antes posible.</p>
+                    
+                    <div class="alternative-contact">
+                        <div class="contact-item">
+                            <span>✉</span>
+                            <a href="mailto:sandarza@gmail.com">sandarza@gmail.com</a>
+                        </div>
+                        <div class="contact-item">
+                            <span>📞</span>
+                            <a href="tel:+56912345678">+56 9 1234 5678</a>
+                        </div>
+                        <div class="contact-item">
+                            <span>📍</span>
+                            <span class="location-text">Lampa, Región Metropolitana, Chile</span>
+                        </div>
+                    </div>
+
+                    <!-- Mapa interactivo de Google Maps enfocado en Lampa -->
+                    <div class="map-container">
+                        <iframe 
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3521.246606957355!2d-70.7344007!3d-33.3045195!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9662bf6e24ece477%3A0xd125748117c73e57!2sAvenida%20El%20Alfalfal%20471%2C%209390015%20Lampa%2C%20Regi%C3%B3n%20Metropolitana!5e1!3m2!1ses-419!2scl!4v1784848905875!5m2!1ses-419!2scl" 
+                            allowfullscreen="" 
+                            loading="lazy"
+                            title="Ubicación de Atlas SPA en Lampa"
+                            referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
+                    </div>
+                </div>
+
+                <!-- Derecha: Formulario de contacto -->
+                <form class="form-column" action="#" method="POST">
+                    <div class="input-group">
+                        <label for="nombre">Nombre</label>
+                        <input type="text" id="nombre" name="nombre" placeholder="Nombre y apellido" required>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="empresa">Empresa</label>
+                        <input type="text" id="empresa" name="empresa" placeholder="Razón social">
+                    </div>
+                    
+                    <div class="input-group">
+                        <label for="correo">Email</label>
+                        <input type="email" id="correo" name="correo" placeholder="correo@ejemplo.com" required>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="celular">Celular</label>
+                        <input type="tel" id="celular" name="celular" placeholder="+56 9 1234 5678" required>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="mensaje">Mensaje</label>
+                        <textarea id="mensaje" name="mensaje" placeholder="Escribe aquí los detalles de tu cotización, modelos o dudas sobre nuestros productos..." required></textarea>
+                    </div>
+
+                    <div class="btn-container">
+                        <button type="submit" class="btn-submit">Enviar mensaje</button>
+                    </div>
+                    <div id="mensaje-formulario"></div>
+                </form>
+
+            </div>
+        </div>
+    </div>
+
+    <div id="float-wsp"></div>
+
+    <div id="footer-container"></div>
+
+    <!-- Scripts JavaScript -->
+    <script src="js/navbar.js"></script>
+    <script src="js/storage.js"></script>
+    <script src="js/modal.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script src="js/validacion.js"></script>
+    <script src="js/whatsapp.js"></script>
+    <script src="js/footer.js"></script>
+</body>
+</html>
